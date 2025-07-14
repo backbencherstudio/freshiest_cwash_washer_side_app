@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:freshiest_cwash_washer_side_app/src/core/routes/route_name.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/constant/icons.dart';
@@ -20,6 +21,8 @@ class BottomNavBar extends StatelessWidget {
       floatingActionButton: GestureDetector(
         onTap: () {
           debugPrint("\n Pressed Center button \n");
+          context.push(RouteName.search);
+
         },
         child: Container(
           width: 52.w,

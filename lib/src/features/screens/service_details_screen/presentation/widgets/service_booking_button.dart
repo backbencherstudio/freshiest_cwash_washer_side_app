@@ -6,7 +6,7 @@ import 'package:go_router/go_router.dart';
 import '../../../../../core/constant/icons.dart';
 import '../../../../../core/constant/padding.dart';
 
-class ServiceBookingButton extends StatelessWidget{
+class ServiceBookingButton extends StatelessWidget {
   const ServiceBookingButton({super.key});
 
   @override
@@ -16,14 +16,20 @@ class ServiceBookingButton extends StatelessWidget{
       child: SizedBox(
         height: 60.h,
         child: Row(
-          children: [
-            SvgPicture.asset(AppIcons.chat),
-            SizedBox(width: 12.w,),
-            Expanded(child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.symmetric(vertical: 15.h)
+          children: <Widget>[
+            // SvgPicture.asset(AppIcons.chat),
+            //  SizedBox(width: 12.w,),
+            Expanded(
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.symmetric(vertical: 15.h),
+                ),
+                onPressed: () {
+                  // context.push(RouteName.serviceBookingScreen);
+                },
+                child: Text("Done"),
               ),
-              onPressed: ()=>context.push(RouteName.serviceBookingScreen), child: Text("Book Now"),),),
+            ),
           ],
         ),
       ),

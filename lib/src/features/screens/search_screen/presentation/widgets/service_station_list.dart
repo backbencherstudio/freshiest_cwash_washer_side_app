@@ -7,14 +7,17 @@ class ServiceStationList extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 150.h,
-      child: ListView.builder(
-          itemCount: 10,
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (_, index){
-            return ServiceStationCard();
-          }),
-    );
+    return ServiceStationCard();
+    //   SizedBox(
+    //   height: 150.h,
+    //   child:
+    //
+    //   ListView.builder(
+    //       itemCount: 1,
+    //       scrollDirection: Axis.horizontal,
+    //       itemBuilder: (_, index){
+    //         return ServiceStationCard();
+    //       }),
+    // );
   }
 }

@@ -15,40 +15,40 @@ class StationDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("Pak De Station", style: textTheme.headlineSmall),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Icon(Icons.location_on_outlined),
-                      Text(
-                        "Tampan, Pekanbaru",
-                        style: textTheme.bodyMedium?.copyWith(
-                          color: AppColor.secondaryTextColor,
-                        ),
-                      ),
-                    ],
-                  ),
+                  // Row(
+                  //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  //   children: [
+                  //     Icon(Icons.location_on_outlined),
+                  //     Text(
+                  //       "Tampan, Pekanbaru",
+                  //       style: textTheme.bodyMedium?.copyWith(
+                  //         color: AppColor.secondaryTextColor,
+                  //       ),
+                  //     ),
+                  //   ],
+                  // ),
                 ],
               ),
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 3.h),
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(8.r),
-                ),
-                child: Row(
-                  spacing: 5.w,
-                  children: [
-                    Icon(Icons.star, color: Colors.yellow),
-                    Text("5.0",style: textTheme.bodySmall?.copyWith(color: AppColor.onPrimary),),
-                  ],
-                ),
-              ),
+              // Container(
+              //   padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 3.h),
+              //   decoration: BoxDecoration(
+              //     color: Colors.black,
+              //     borderRadius: BorderRadius.circular(8.r),
+              //   ),
+              //   child: Row(
+              //     spacing: 5.w,
+              //     children: [
+              //       Icon(Icons.star, color: Colors.yellow),
+              //       Text("5.0",style: textTheme.bodySmall?.copyWith(color: AppColor.onPrimary),),
+              //     ],
+              //   ),
+              // ),
             ],
           ),
           SizedBox(height: 21.h),

@@ -14,25 +14,23 @@ class ServiceTypeList extends StatelessWidget {
     required Color color,
     Color? textColor,
   }) {
-    return Expanded(
-      child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 12.h),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8.r),
-          color: color,
-        ),
-        child: Column(
-          children: [
-            SvgPicture.asset(AppIcons.washType),
-            SizedBox(height: 16.h),
-            Text(
-              serviceName,
-              style: textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w700,color: textColor),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-            ),
-          ],
-        ),
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 12.h),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8.r),
+        color: color,
+      ),
+      child: Column(
+        children: [
+          SvgPicture.asset(AppIcons.washType),
+          SizedBox(height: 16.h),
+          Text(
+            serviceName,
+            style: textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w700,color: textColor),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
+        ],
       ),
     );
   }
@@ -49,24 +47,24 @@ class ServiceTypeList extends StatelessWidget {
           SizedBox(height: 15.h),
           Row(
             spacing: 10.w,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               _serviceCard(
                 textTheme: textTheme,
-                serviceName: 'SPECIAL',
+                serviceName: 'MEDIUM',
                 color: AppColor.primary,
                 textColor: Colors.white
               ),
-              _serviceCard(
-                textTheme: textTheme,
-                serviceName: 'REGULAR',
-                color: AppColor.primary.withValues(alpha: 0.55),
-              ),
-              _serviceCard(
-                textTheme: textTheme,
-                serviceName: 'MEDIUM',
-                color: AppColor.primary.withValues(alpha: 0.2),
-              ),
+              // _serviceCard(
+              //   textTheme: textTheme,
+              //   serviceName: 'REGULAR',
+              //   color: AppColor.primary.withValues(alpha: 0.55),
+              // ),
+              // _serviceCard(
+              //   textTheme: textTheme,
+              //   serviceName: 'MEDIUM',
+              //   color: AppColor.primary.withValues(alpha: 0.2),
+              // ),
             ],
           ),
         ],
