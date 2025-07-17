@@ -11,33 +11,15 @@ class ServiceCoverPhoto extends StatelessWidget{
     return   SizedBox(
       width: double.infinity,
       height: 292.h,
-      child: Stack(
-        fit: StackFit.expand,
-        children: [
-          Positioned.fill(
-            child: ClipRRect(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(15.r),
-                bottomRight: Radius.circular(15.r),
-              ),
-              child: Image.asset(
-                'assets/images/car_wash.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
-          Positioned(
-            top: 30.h,
-            left: 0,
-            child: Padding(
-              padding: AppPadding.horizontalPadding,
-              child: IconButton(
-                onPressed: () => context.pop(),
-                icon: Icon(Icons.arrow_back_ios, color: Colors.white),
-              ),
-            ),
-          ),
-        ],
+      child: ClipRRect(
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(15.r),
+          bottomRight: Radius.circular(15.r),
+        ),
+        child: Image.asset(
+          'assets/images/car_wash.png',
+          fit: BoxFit.cover,
+        ),
       ),
     );
   }
